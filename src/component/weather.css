@@ -1,0 +1,41 @@
+.weather-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.weather-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+.weather-app{
+  text-align: center;
+  position: relative;
+  top: 200px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #E7F0FF 100%, #E8F1FF 47%);
+  min-height: 94vh;
+  padding: 20px;
+}
+  
+button{
+ background-color: rgb(73, 198, 73); 
+ border: none;
+ margin-left: 5px;
+ height: 40px;
+ border-radius: 5px;
+ width: 100px;
+ color: #E7F0FF;
+}
+input{
+    height: 40px;
+    border-radius: 5px;
+    width: 200px;
+    border: none;
+    background-color: white;
+
+}
+
+.alert{
+    margin-bottom: 40px;
+}
