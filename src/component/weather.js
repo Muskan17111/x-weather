@@ -26,7 +26,9 @@ const WeatherApp = () => {
         console.error('Error fetching weather data:', error);
         setError('Failed to fetch weather data');
         setLoading(false);
-        alert('Failed to fetch weather data');
+        if (process.env.NODE_ENV !== 'test') {
+            alert('Failed to fetch weather data');
+          }
       });
   };
 
@@ -41,7 +43,7 @@ const WeatherApp = () => {
         />
         <button onClick={handleSearch}>Search</button>
       </div>
-      {loading && <p>Loading data…</p>}
+      {loading && <p>Loading data...</p>}
       {error && <p className="alert">{error}</p>}
       {weatherData && (
         <div className="weather-cards">
